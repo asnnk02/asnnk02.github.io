@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background: url(img/2.jpg) no-repeat;
+				background-size: 100%;
+			}
+			#Ferris {
+				width: 768px;
+				height: 768px;
+				background:url(img/fsw.png) no-repeat;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left:-384px ;
+				animation: zhuan 4s linear infinite;
+			}
+			#Ferris ul {
+				list-style: none;
+			}
+			#Ferris li {
+				width: 130px;
+				height: 170px;
+				position: absolute;
+				animation: ren 4s linear infinite;
+			}
+			li:nth-child(1) {
+				top: 0;
+				left: 50%;
+				margin-left: 65px;
+				background: url(img/boy.png) no-repeat;
+			}
+			li:nth-child(2) {
+				top:100px;
+				left:20px;
+				background: url(img/dog.png) no-repeat;
+			}
+			li:nth-child(3) {
+				top: 400px;
+				left:0;
+				background: url(img/girl.png) no-repeat;
+			}
+			li:nth-child(4) {
+				top: 600px;
+				left: 130px;
+				background: url(img/girls.png) no-repeat;
+			}
+			li:nth-child(5) {
+				top: 600px;
+				left: 400px;
+				margin-left: 65px;
+				background: url(img/hairboy.png) no-repeat;
+			}
+			li:nth-child(6) {
+				top: 300px;
+				left: 650px;
+				background: url(img/shamegirl.png) no-repeat;
+			}
+			
+			#down {
+				width: 247px;
+				height: 490px;
+				background: url(img/bracketsmall.png) no-repeat;
+				position: absolute;
+				top: 384px;
+				left: 50%;
+				margin-left:-123px ;
+				z-index: -1;
+			}
+			#up {
+				width: 358px;
+				height: 529px;
+				background: url(img/bracket.png) no-repeat;
+				position: absolute;
+				top: 384px;
+				left: 50%;
+				margin-left: -179px;
+			}
+			.logo {
+				width: 577px;
+				height: 257px;
+				background: url(img/big-title.png) no-repeat;
+				position: absolute;
+				top: 280px;
+				left: 50%;
+				margin-left: -288px;
+			}
+			#messge {
+				width: 413px;
+				height: 139px;
+				background: url(img/title.png) no-repeat;
+				position: absolute;
+				top: 468px;
+				left: 50%;
+				margin-left:-206px ;
+			}
+			#point {
+				width: 48px;
+				height: 64px;
+				background: url(img/arrow.png) no-repeat;
+				position: absolute;
+				top: 553px;
+				left: 50%;
+				margin-left: -24px;
+			}
+			@keyframes zhuan{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+				}
+				@keyframes ren{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(-360deg);
+				}
+				}
+		</style>
+	</head>
+	<body>
+		<div id="Ferris">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div id="up"></div>
+		<div id="down"></div>
+		<div class="logo"></div><br />
+		<div id="messge"></div>
+		<div id="point"></div>
+	</body>
+</html>
